@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>推特高颜值福利 | 官方视频门户 · 颜值内容社区</title>
+<meta name="description" content="推特高颜值福利官方网站，专注高颜值原创视频内容生态，汇聚优质创作者、精品短视频与企业级内容运营，打造值得信赖的颜值内容社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e63462'/%3E%3Ccircle cx='24' cy='28' r='7' fill='%23fff'/%3E%3Cpath d='M40 20l12 5v19l-12 5z' fill='%23ffd9df'/%3E%3C/svg%3E">
+<style>
+:root{
+  --klf-ink:#1b1420;
+  --klf-ink-soft:#5a4d63;
+  --klf-paper:#fdf7f9;
+  --klf-card:#ffffff;
+  --klf-rose:#e63462;
+  --klf-rose-deep:#b5244a;
+  --klf-amber:#ffb85c;
+  --klf-violet:#7d5ba6;
+  --klf-line:#efdde4;
+  --klf-shadow:0 10px 30px rgba(124,42,74,.10);
+  --klf-radius:18px;
+  --klf-sticky:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--klf-sticky)}
+body{
+  margin:0;background:var(--klf-paper);color:var(--klf-ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800}
+p{margin:0 0 1em}
+ul{margin:0;padding-left:1.1em}
+.klf-wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* ===== 公告条 + 页头吸顶 ===== */
+.klf-topbar{background:linear-gradient(90deg,#2a1020,#4a1830 55%,#2a1020);color:#ffe4ec;font-size:13px}
+.klf-topbar-in{display:flex;gap:14px;align-items:center;padding:8px 0;overflow:hidden}
+.klf-topbar-tag{flex:0 0 auto;background:var(--klf-rose);color:#fff;border-radius:999px;padding:2px 12px;font-weight:700;letter-spacing:.06em}
+.klf-topbar-track{display:flex;gap:34px;white-space:nowrap;animation:klfSlide 26s linear infinite}
+.klf-topbar-track span{opacity:.92}
+@keyframes klfSlide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.klf-header{position:sticky;top:0;z-index:60;background:rgba(253,247,249,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--klf-line)}
+.klf-header-in{display:flex;align-items:center;gap:20px;padding:12px 0}
+.klf-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.klf-brand-mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--klf-rose),var(--klf-violet));display:grid;place-items:center;color:#fff;font-weight:900;font-size:19px;box-shadow:0 6px 16px rgba(230,52,98,.28)}
+.klf-brand-name{font-weight:900;font-size:17px;letter-spacing:.02em}
+.klf-brand-sub{font-size:11px;color:var(--klf-ink-soft);letter-spacing:.18em}
+.klf-nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.klf-nav a{padding:7px 13px;border-radius:999px;font-size:14px;color:var(--klf-ink-soft);font-weight:600;transition:.2s}
+.klf-nav a:hover,.klf-nav a:focus-visible{background:#fbe3ea;color:var(--klf-rose-deep);outline:none}
+.klf-search{position:relative;display:flex;align-items:center;flex:0 0 250px}
+.klf-search input{width:100%;border:1px solid var(--klf-line);background:#fff;border-radius:999px;padding:9px 40px 9px 16px;font-size:13.5px;font-family:inherit;color:var(--klf-ink);outline:none;transition:.2s}
+.klf-search input:focus{border-color:var(--klf-rose);box-shadow:0 0 0 4px rgba(230,52,98,.12)}
+.klf-search button{position:absolute;right:4px;border:0;background:var(--klf-rose);color:#fff;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:14px;line-height:1}
+.klf-search-tip{position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border:1px solid var(--klf-line);border-radius:12px;box-shadow:var(--klf-shadow);padding:10px 12px;font-size:12.5px;color:var(--klf-ink-soft);display:none;z-index:70}
+.klf-search-tip.klf-on{display:block}
+.klf-burger{display:none;border:1px solid var(--klf-line);background:#fff;border-radius:10px;width:40px;height:40px;font-size:18px;cursor:pointer;color:var(--klf-ink)}
+.klf-mobile-nav{display:none;flex-direction:column;gap:2px;padding:0 0 12px}
+.klf-mobile-nav.klf-on{display:flex}
+.klf-mobile-nav a{padding:10px 14px;border-radius:10px;background:#fff;border:1px solid var(--klf-line);font-size:14px;font-weight:600}
+
+/* ===== 首屏 5:5 大幅图文 ===== */
+.klf-hero{padding:44px 0 30px}
+.klf-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center}
+.klf-kicker{display:inline-flex;align-items:center;gap:8px;background:#fbe3ea;color:var(--klf-rose-deep);border-radius:999px;padding:5px 14px;font-size:12.5px;font-weight:700;letter-spacing:.04em}
+.klf-hero h1{font-size:clamp(30px,4.6vw,52px);letter-spacing:-.02em;margin:16px 0 14px}
+.klf-hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--klf-rose),var(--klf-violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.klf-hero-lead{font-size:15.5px;color:var(--klf-ink-soft);max-width:34em}
+.klf-hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 26px}
+.klf-btn{border:0;cursor:pointer;font-family:inherit;font-size:14px;font-weight:700;border-radius:999px;padding:11px 24px;transition:.2s;display:inline-flex;align-items:center;gap:7px}
+.klf-btn-primary{background:var(--klf-rose);color:#fff;box-shadow:0 8px 20px rgba(230,52,98,.3)}
+.klf-btn-primary:hover{background:var(--klf-rose-deep);transform:translateY(-1px)}
+.klf-btn-ghost{background:#fff;color:var(--klf-ink);border:1px solid var(--klf-line)}
+.klf-btn-ghost:hover{border-color:var(--klf-rose);color:var(--klf-rose-deep)}
+.klf-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.klf-stat{background:#fff;border:1px solid var(--klf-line);border-radius:14px;padding:12px 14px;text-align:left}
+.klf-stat b{display:block;font-size:22px;color:var(--klf-rose-deep);letter-spacing:-.02em}
+.klf-stat span{font-size:12px;color:var(--klf-ink-soft)}
+.klf-hero-visual{position:relative}
+.klf-hero-visual img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:26px;box-shadow:0 26px 60px rgba(124,42,74,.22)}
+.klf-hero-chip{position:absolute;left:-10px;bottom:26px;background:#fff;border-radius:14px;padding:10px 16px;box-shadow:var(--klf-shadow);font-size:12.5px;font-weight:700;color:var(--klf-rose-deep);border:1px solid var(--klf-line)}
+.klf-hero-chip i{display:block;font-style:normal;color:var(--klf-ink-soft);font-weight:500;font-size:11.5px;margin-top:2px}
+
+/* ===== 通用 section ===== */
+.klf-sec{padding:46px 0}
+.klf-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:26px;flex-wrap:wrap}
+.klf-sec-head h2{font-size:clamp(22px,2.6vw,30px)}
+.klf-sec-head h2 small{display:block;font-size:12.5px;color:var(--klf-rose);letter-spacing:.2em;font-weight:800;margin-bottom:6px}
+.klf-sec-desc{font-size:13.5px;color:var(--klf-ink-soft);max-width:38em}
+.klf-band{background:#fff;border-top:1px solid var(--klf-line);border-bottom:1px solid var(--klf-line)}
+
+/* ===== 焦点大图 + 文字列表 ===== */
+.klf-focus-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:30px}
+.klf-focus-main{background:#fff;border:1px solid var(--klf-line);border-radius:var(--klf-radius);overflow:hidden;box-shadow:var(--klf-shadow)}
+.klf-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.klf-focus-body{padding:18px 20px 20px}
+.klf-tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.klf-tag{font-size:11.5px;border-radius:999px;padding:2px 10px;background:#fbe3ea;color:var(--klf-rose-deep);font-weight:700}
+.klf-tag.klf-t2{background:#efe7fb;color:var(--klf-violet)}
+.klf-tag.klf-t3{background:#fff1dc;color:#a36a17}
+.klf-focus-body h3{font-size:19px;margin-bottom:8px}
+.klf-meta{font-size:12px;color:var(--klf-ink-soft);display:flex;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.klf-actions{display:flex;gap:8px;flex-wrap:wrap}
+.klf-act{border:1px solid var(--klf-line);background:#fff;border-radius:999px;padding:5px 12px;font-size:12px;cursor:pointer;font-family:inherit;color:var(--klf-ink-soft);font-weight:600;transition:.15s}
+.klf-act:hover{border-color:var(--klf-rose);color:var(--klf-rose-deep)}
+.klf-act.klf-liked{background:var(--klf-rose);border-color:var(--klf-rose);color:#fff}
+.klf-act.klf-saved{background:#efe7fb;border-color:var(--klf-violet);color:var(--klf-violet)}
+.klf-vlist{display:flex;flex-direction:column;gap:14px}
+.klf-vitem{background:#fff;border:1px solid var(--klf-line);border-radius:14px;padding:14px 16px;transition:.2s;min-width:0}
+.klf-vitem:hover{border-color:#f0c3d1;transform:translateY(-2px);box-shadow:var(--klf-shadow)}
+.klf-vitem h4{font-size:15px;margin-bottom:5px}
+.klf-vitem p{font-size:12.8px;color:var(--klf-ink-soft);margin:0 0 8px}
+.klf-vitem .klf-meta{margin-bottom:8px}
+
+/* ===== 三列等高卡片 ===== */
+.klf-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.klf-card{background:#fff;border:1px solid var(--klf-line);border-radius:var(--klf-radius);overflow:hidden;display:flex;flex-direction:column;transition:.2s;min-width:0}
+.klf-card:hover{transform:translateY(-3px);box-shadow:var(--klf-shadow);border-color:#f0c3d1}
+.klf-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.klf-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.klf-card-body h3{font-size:16px;margin-bottom:6px}
+.klf-card-body p{font-size:13px;color:var(--klf-ink-soft);flex:1}
+
+/* ===== 专题 ===== */
+.klf-topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.klf-topic{background:#fff;border:1px solid var(--klf-line);border-radius:var(--klf-radius);padding:20px;min-width:0}
+.klf-topic .klf-status{font-size:11.5px;font-weight:800;color:var(--klf-rose);letter-spacing:.1em}
+.klf-topic h3{font-size:17px;margin:6px 0 8px}
+.klf-topic p{font-size:13px;color:var(--klf-ink-soft)}
+.klf-topic ul{font-size:12.8px;color:var(--klf-ink-soft);margin-top:6px}
+.klf-topic li{margin-bottom:5px}
+
+/* ===== 作者双列简介 ===== */
+.klf-authors{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.klf-author{display:flex;gap:14px;background:#fff;border:1px solid var(--klf-line);border-radius:var(--klf-radius);padding:18px;min-width:0}
+.klf-ava{width:56px;height:56px;flex:0 0 56px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:21px;color:#fff}
+.klf-author h3{font-size:15.5px}
+.klf-author .klf-role{font-size:11.8px;color:var(--klf-rose-deep);font-weight:700;margin-bottom:4px}
+.klf-author p{font-size:12.6px;color:var(--klf-ink-soft);margin:6px 0 8px}
+.klf-author .klf-nums{font-size:11.8px;color:var(--klf-ink-soft);display:flex;gap:12px}
+
+/* ===== 长篇解析 ===== */
+.klf-essay{background:#fff;border:1px solid var(--klf-line);border-radius:22px;padding:clamp(22px,4vw,44px)}
+.klf-essay h2{font-size:clamp(22px,2.6vw,30px);margin-bottom:8px}
+.klf-essay h3{font-size:18px;margin:26px 0 10px;padding-left:12px;border-left:4px solid var(--klf-rose)}
+.klf-essay p{font-size:14.5px;color:#3d3143}
+.klf-essay .klf-quote{background:#fbe3ea;border-left:4px solid var(--klf-rose);border-radius:0 12px 12px 0;padding:12px 16px;font-size:13.8px;color:var(--klf-rose-deep);margin:16px 0}
+.klf-figure{margin:18px 0}
+.klf-figure img{width:100%;aspect-ratio:16/7;object-fit:cover;border-radius:16px}
+.klf-figure figcaption{font-size:12px;color:var(--klf-ink-soft);margin-top:8px;text-align:center}
+
+/* ===== 评论 ===== */
+.klf-comments{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.klf-cmt{background:#fff;border:1px solid var(--klf-line);border-radius:14px;padding:16px;min-width:0}
+.klf-cmt-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.klf-cmt-head .klf-ava{width:36px;height:36px;flex:0 0 36px;font-size:14px}
+.klf-cmt-head b{font-size:13px}
+.klf-cmt-head span{font-size:11.5px;color:var(--klf-ink-soft)}
+.klf-cmt p{font-size:13px;margin:0;color:#3d3143}
+.klf-cmt-rating{color:var(--klf-amber);font-size:12px;letter-spacing:2px;margin-bottom:4px}
+
+/* ===== FAQ ===== */
+.klf-faq{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.klf-faq details{background:#fff;border:1px solid var(--klf-line);border-radius:14px;padding:4px 18px}
+.klf-faq summary{cursor:pointer;list-style:none;padding:13px 0;font-weight:700;font-size:14px;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.klf-faq summary::-webkit-details-marker{display:none}
+.klf-faq summary::after{content:"+";color:var(--klf-rose);font-weight:900;font-size:18px;transition:.2s}
+.klf-faq details[open] summary::after{transform:rotate(45deg)}
+.klf-faq p{font-size:13px;color:var(--klf-ink-soft);padding-bottom:12px;margin:0}
+
+/* ===== 数据榜单 ===== */
+.klf-rank{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.klf-rankbox{background:#fff;border:1px solid var(--klf-line);border-radius:var(--klf-radius);padding:18px;min-width:0}
+.klf-rankbox h3{font-size:15px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.klf-rankbox h3 span{background:var(--klf-rose);color:#fff;border-radius:6px;font-size:11px;padding:1px 7px}
+.klf-rankbox ol{list-style:none;padding:0;margin:0;counter-reset:rk}
+.klf-rankbox li{counter-increment:rk;display:flex;gap:10px;font-size:13px;padding:8px 0;border-bottom:1px dashed var(--klf-line);align-items:baseline}
+.klf-rankbox li:last-child{border-bottom:0}
+.klf-rankbox li::before{content:counter(rk);font-weight:900;color:var(--klf-rose);font-size:12px;width:14px;flex:0 0 14px}
+.klf-rankbox li b{margin-left:auto;font-size:12px;color:var(--klf-ink-soft);white-space:nowrap}
+
+/* ===== 动态 ===== */
+.klf-news{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.klf-newsitem{background:#fff;border:1px solid var(--klf-line);border-radius:14px;padding:16px 18px;min-width:0}
+.klf-newsitem time{font-size:11.5px;color:var(--klf-rose-deep);font-weight:800}
+.klf-newsitem h3{font-size:15px;margin:5px 0 6px}
+.klf-newsitem p{font-size:12.8px;color:var(--klf-ink-soft);margin:0}
+
+/* ===== 合作墙 ===== */
+.klf-partners{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.klf-partner{background:#fff;border:1px solid var(--klf-line);border-radius:12px;padding:16px;text-align:center;font-weight:800;font-size:13.5px;color:var(--klf-ink-soft);letter-spacing:.05em}
+.klf-partner span{display:block;font-size:11px;font-weight:500;color:#a38fa8;margin-top:2px;letter-spacing:0}
+
+/* ===== 投稿入口 ===== */
+.klf-cta{background:linear-gradient(120deg,#2a1020,#5c1a38 60%,#7d5ba6);color:#fff;border-radius:22px;padding:clamp(24px,4vw,42px);display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.klf-cta h2{font-size:clamp(20px,2.4vw,28px);margin-bottom:8px}
+.klf-cta p{font-size:13.5px;color:#f3d8e2;margin:0;max-width:40em}
+.klf-cta .klf-btn-primary{background:#fff;color:var(--klf-rose-deep);box-shadow:none}
+.klf-cta .klf-btn-primary:hover{background:#ffe4ec}
+
+/* ===== 页脚 ===== */
+.klf-footer{background:#20101c;color:#d9c6d4;margin-top:50px;padding:44px 0 24px;font-size:13px}
+.klf-footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:30px}
+.klf-footer h3{color:#fff;font-size:14px;margin-bottom:12px;letter-spacing:.05em}
+.klf-footer a{color:#d9c6d4;transition:.2s}
+.klf-footer a:hover{color:#ffb8cc}
+.klf-footer ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:7px}
+.klf-footer-bottom{border-top:1px solid #3a2433;margin-top:30px;padding-top:16px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:#a58b9c}
+
+/* ===== 返回顶部 / Toast / 弹窗 ===== */
+.klf-top{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;border:0;background:var(--klf-rose);color:#fff;font-size:18px;cursor:pointer;box-shadow:0 10px 24px rgba(230,52,98,.4);display:none;z-index:80}
+.klf-top.klf-on{display:block}
+.klf-toast{position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:#20101c;color:#fff;padding:10px 20px;border-radius:999px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:120}
+.klf-toast.klf-on{opacity:1;transform:translate(-50%,0)}
+.klf-modal{position:fixed;inset:0;background:rgba(28,14,24,.55);display:none;place-items:center;padding:20px;z-index:110}
+.klf-modal.klf-on{display:grid}
+.klf-modal-box{background:#fff;border-radius:20px;padding:26px;width:min(480px,100%);box-shadow:0 30px 70px rgba(0,0,0,.3);position:relative}
+.klf-modal-box h3{font-size:19px;margin-bottom:8px}
+.klf-modal-box p{font-size:13.5px;color:var(--klf-ink-soft)}
+.klf-modal-close{position:absolute;top:12px;right:14px;border:0;background:#fbe3ea;color:var(--klf-rose-deep);width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:15px;line-height:1}
+.klf-modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+
+@media (max-width:960px){
+  .klf-hero-grid,.klf-focus-grid{grid-template-columns:1fr}
+  .klf-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .klf-footer-grid{grid-template-columns:1fr 1fr}
+  .klf-nav{display:none}
+  .klf-search{display:none}
+  .klf-burger{display:block;margin-left:auto}
+}
+@media (max-width:640px){
+  .klf-cards{grid-template-columns:1fr}
+  .klf-stats{grid-template-columns:1fr}
+  .klf-footer-grid{grid-template-columns:1fr}
+  .klf-header-in{padding:10px 0}
+  .klf-hero{padding-top:28px}
+  .klf-topbar-in{font-size:12px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 -->
+<div class="klf-topbar">
+  <div class="klf-wrap klf-topbar-in">
+    <span class="klf-topbar-tag">官方发布</span>
+    <div class="klf-topbar-track">
+      <span>「高颜值影像计划 2026 冬季赛」报名通道已开启，优秀作品直登官网首页</span>
+      <span>福利社新增 128 支高清原创短片，会员可离线下载</span>
+      <span>创作者扶持基金第三批公示，12 位新锐创作者入选</span>
+      <span>「高颜值影像计划 2026 冬季赛」报名通道已开启，优秀作品直登官网首页</span>
+      <span>福利社新增 128 支高清原创短片，会员可离线下载</span>
+      <span>创作者扶持基金第三批公示，12 位新锐创作者入选</span>
+    </div>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="klf-header">
+  <div class="klf-wrap klf-header-in">
+    <a class="klf-brand" href="#klf-top">
+      <span class="klf-brand-mark">推</span>
+      <span>
+        <span class="klf-brand-name">推特高颜值福利</span>
+        <span class="klf-brand-sub">OFFICIAL VIDEO</span>
+      </span>
+    </a>
+    <nav class="klf-nav" aria-label="主导航">
+      <a href="#klf-focus">焦点推荐</a>
+      <a href="#klf-videos">精品内容</a>
+      <a href="#klf-topics">专题企划</a>
+      <a href="#klf-authors">创作者</a>
+      <a href="#klf-essay">品牌解析</a>
+      <a href="#klf-rank">数据榜单</a>
+      <a href="#klf-faq">帮助</a>
+    </nav>
+    <div class="klf-search">
+      <label for="klfSearchInput" class="klf-sr-only" style="position:absolute;left:-9999px">站内搜索</label>
+      <input id="klfSearchInput" type="search" placeholder="搜索创作者 / 专题 / 标签" autocomplete="off">
+      <button type="button" id="klfSearchBtn" aria-label="搜索">🔍</button>
+      <div class="klf-search-tip" id="klfSearchTip"></div>
+    </div>
+    <button class="klf-burger" id="klfBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+  </div>
+  <div class="klf-wrap">
+    <nav class="klf-mobile-nav" id="klfMobileNav" aria-label="移动导航">
+      <a href="#klf-focus">焦点推荐</a>
+      <a href="#klf-videos">精品内容</a>
+      <a href="#klf-topics">专题企划</a>
+      <a href="#klf-authors">创作者</a>
+      <a href="#klf-essay">品牌解析</a>
+      <a href="#klf-rank">数据榜单</a>
+      <a href="#klf-faq">帮助</a>
+    </nav>
+  </div>
+</header>
+
+<main id="klf-top">
+
+  <!-- S2 品牌首屏 5:5 -->
+  <section class="klf-hero klf-wrap" aria-label="品牌首屏">
+    <div class="klf-hero-grid">
+      <div>
+        <span class="klf-kicker">· 官方网站 · 高颜值原创视频门户</span>
+        <h1>推特高颜值福利</h1>
+        <p class="klf-hero-lead">作为深耕高颜值影像领域的<b>视频品牌官网</b>，我们为创作者与企业搭建高品质内容生态：原创、正版、高清的精品短片在此持续更新，社区里汇聚了认真拍片的人与认真看片的人。</p>
+        <p style="font-size:13.5px;color:var(--klf-ink-soft);max-width:36em">推特高颜值福利官方网站以「真实、审美、陪伴」为内容底座，坚持用户至上与匠心选片。平台覆盖日常记录、城市探索、艺术美学、创作幕后、人物访谈等多元题材，为品牌与企业提供稳定的内容运营与传播阵地，也为新锐创作者提供从上传、曝光到成长的完整路径。我们希望高颜值不止于外表，而是把审美、故事与人连接起来，形成值得信赖的社区口碑。</p>
+        <div class="klf-hero-btns">
+          <a class="klf-btn klf-btn-primary" href="#klf-videos">进入精品内容库</a>
+          <a class="klf-btn klf-btn-ghost" href="#klf-topics">查看专题企划</a>
+          <button class="klf-btn klf-btn-ghost" type="button" id="klfSubmitOpen">我要投稿</button>
+        </div>
+        <div class="klf-stats">
+          <div class="klf-stat"><b>3,860+</b><span>官方高清原创短片</span></div>
+          <div class="klf-stat"><b>1,240万</b><span>社区月均播放</span></div>
+          <div class="klf-stat"><b>286 位</b><span>签约与入驻创作者</span></div>
+        </div>
+      </div>
+      <div class="klf-hero-visual">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 544'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e63462'/%3E%3Cstop offset='0.55' stop-color='%237d5ba6'/%3E%3Cstop offset='1' stop-color='%232a1020'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='544' fill='url(%23bg)'/%3E%3Ccircle cx='470' cy='150' r='118' fill='%23ffb85c' opacity='0.85'/%3E%3Ccircle cx='470' cy='150' r='76' fill='%23fdf7f9' opacity='0.9'/%3E%3Crect x='62' y='240' width='250' height='250' rx='26' fill='%23fdf7f9' opacity='0.94'/%3E%3Cpath d='M150 300a34 34 0 1 1 0 68 34 34 0 0 1 0-68z' fill='%23e63462'/%3E%3Cpath d='M205 292l64 32v40l-64 32z' fill='%237d5ba6'/%3E%3Cpath d='M84 430h206' stroke='%23e63462' stroke-width='9' stroke-linecap='round'/%3E%3Cpath d='M84 456h140' stroke='%23c9a9d6' stroke-width='9' stroke-linecap='round'/%3E%3Crect x='380' y='300' width='200' height='30' rx='15' fill='%23fbe3ea' opacity='0.9'/%3E%3Crect x='380' y='348' width='140' height='30' rx='15' fill='%23fbe3ea' opacity='0.6'/%3E%3C/svg%3E" width="640" height="544" alt="推特高颜值福利官网首屏主视觉：渐变紫红背景与播放标识构成品牌形象">
+        <div class="klf-hero-chip">今日更新 12 支<i>高清原片 · 正版授权</i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点 + 视频条目 -->
+  <section class="klf-sec klf-wrap" id="klf-focus" aria-label="焦点推荐">
+    <div class="klf-sec-head">
+      <h2><small>FOCUS / 焦点</small>推特高颜值福利 · 本周焦点推荐</h2>
+      <p class="klf-sec-desc">由编辑部与社区共同投票产生，围绕高颜值影像、品牌故事与真实生活记录，呈现本周最值得观看的官方精品内容。</p>
+    </div>
+    <div class="klf-focus-grid">
+      <article class="klf-focus-main">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ffe6ee'/%3E%3Cstop offset='1' stop-color='%23ffd0a8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23g1)'/%3E%3Ccircle cx='620' cy='120' r='90' fill='%23e63462' opacity='0.18'/%3E%3Crect x='70' y='120' width='320' height='210' rx='18' fill='%23fff' opacity='0.95'/%3E%3Ccircle cx='150' cy='210' r='30' fill='%23e63462'/%3E%3Cpath d='M196 186l58 28v36l-58 28z' fill='%237d5ba6'/%3E%3Cpath d='M112 290h176' stroke='%23e8c3d0' stroke-width='8' stroke-linecap='round'/%3E%3Cpath d='M470 200q80-60 160 0t160 0' stroke='%237d5ba6' stroke-width='10' fill='none' opacity='0.5' stroke-linecap='round'/%3E%3C/svg%3E" width="800" height="450" alt="焦点推荐封面：暖粉与杏色渐变中的播放标识与人物剪影">
+        <div class="klf-focus-body">
+          <div class="klf-tagrow"><span class="klf-tag">城市探索</span><span class="klf-tag klf-t2">艺术美学</span><span class="klf-tag klf-t3">本周第一</span></div>
+          <h3>《午后三点的城市面孔》：一座城里被忽略的 12 种好看</h3>
+          <p style="font-size:13.5px;color:var(--klf-ink-soft)">导演用三个月跟拍旧城区，把车窗、台阶、菜市场的光影剪成 18 分钟影像。它不美学滤镜，只呈现真实生活里的体面与温柔。</p>
+          <div class="klf-meta"><span>创作者 · 沈屿</span><span>播放 68.4 万</span><span>点赞 4.2 万</span><span>收藏 1.9 万</span></div>
+          <div class="klf-actions">
+            <button class="klf-act klf-like" type="button" data-count="42000">♡ 点赞</button>
+            <button class="klf-act klf-save" type="button">☆ 收藏</button>
+            <button class="klf-act klf-open-cmt" type="button">💬 评论</button>
+            <button class="klf-act klf-copy" type="button">🔗 复制链接</button>
+          </div>
+        </div>
+      </article>
+      <div class="klf-vlist">
+        <div class="klf-vitem">
+          <div class="klf-tagrow"><span class="klf-tag klf-t2">创作幕后</span></div>
+          <h4>打光的十种脾气：人像短片现场复盘</h4>
+          <p>摄影师拆解自然光与柔光箱的取舍，附完整器材清单与试拍片段。</p>
+          <div class="klf-meta"><span>作者 · 白鹿</span><span>播放 42.1 万</span><span>点赞 2.6 万</span></div>
+          <div class="klf-actions"><button class="klf-act klf-like" type="button" data-count="26000">♡ 点赞</button><button class="klf-act klf-save" type="button">☆ 收藏</button></div>
+        </div>
+        <div class="klf-vitem">
+          <div class="klf-tagrow"><span class="klf-tag">人物访谈</span></div>
+          <h4>和三位妆造师聊了四小时：好看从来没有标准答案</h4>
+          <p>关于审美、职业与被误解，几位从业者给出非常诚实的答案。</p>
+          <div class="klf-meta"><span>作者 · 陆星野</span><span>播放 37.8 万</span><span>点赞 2.1 万</span></div>
+          <div class="klf-actions"><button class="klf-act klf-like" type="button" data-count="21000">♡ 点赞</button><button class="klf-act klf-save" type="button">☆ 收藏</button></div>
+        </div>
+        <div class="klf-vitem">
+          <div class="klf-tagrow"><span class="klf-tag klf-t3">实用技巧</span></div>
+          <h4>手机也能拍出高级感：五个镜头语言练习</h4>
+          <p>从构图、焦段到节奏，逐一演示，新手当天就能模仿的练习方法。</p>
+          <div class="klf-meta"><span>作者 · 韩小雨</span><span>播放 51.3 万</span><span>点赞 3.4 万</span></div>
+          <div class="klf-actions"><button class="klf-act klf-like" type="button" data-count="34000">♡ 点赞</button><button class="klf-act klf-save" type="button">☆ 收藏</button></div>
+        </div>
+        <div class="klf-vitem">
+          <div class="klf-tagrow"><span class="klf-tag klf-t2">日常记录</span></div>
+          <h4>一个人住第七年：把出租屋剪成一部小电影</h4>
+          <p>没有剧情，只有四季与光影的变化，用十一分钟记录生活的秩序感。</p>
+          <div class="klf-meta"><span>作者 · 沈屿</span><span>播放 29.6 万</span><span>点赞 1.7 万</span></div>
+          <div class="klf-actions"><button class="klf-act klf-like" type="button" data-count="17000">♡ 点赞</button><button class="klf-act klf-save" type="button">☆ 收藏</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 三列等高视频卡 -->
+  <section class="klf-sec klf-band" id="klf-videos" aria-label="精品内容">
+    <div class="klf-wrap">
+      <div class="klf-sec-head">
+        <h2><small>LIBRARY / 精品内容</small>推特高颜值福利 · 精选视频库</h2>
+        <p class="klf-sec-desc">官网每周固定更新，涵盖教程干货、深度测评与原创影像。所有内容均为平台原创或正版授权，支持高清播放与收藏。</p>
+      </div>
+      <div class="klf-cards">
+        <article class="klf-card">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%232a1020'/%3E%3Ccircle cx='120' cy='90' r='52' fill='%23e63462' opacity='0.8'/%3E%3Crect x='70' y='150' width='340' height='14' rx='7' fill='%237d5ba6' opacity='0.7'/%3E%3Crect x='70' y='180' width='220' height='14' rx='7' fill='%23ffb85c' opacity='0.7'/%3E%3Cpath d='M360 60l70 30v70l-70 30z' fill='%23fdf7f9' opacity='0.9'/%3E%3C/svg%3E" width="480" height="270" alt="精品内容封面：深色背景与荧光色块构成的剪辑节奏示意">
+          <div class="klf-card-body">
+            <div class="klf-tagrow"><span class="klf-tag">教程干货</span></div>
+            <h3>十四天学会剪一支高颜值短片</h3>
+            <p>从分镜到调色，逐日给出练习任务，适合零基础但审美在线的入门创作者。</p>
+            <div class="klf-meta"><span>作者 · 韩小雨</span><span>播放 44.2 万</span><span>点赞 2.9 万</span></div>
+            <div class="klf-actions"><button class="klf-act klf-like" type="button" data-count="29000">♡ 点赞</button><button class="klf-act klf-save" type="button">☆ 收藏</button></div>
+          </div>
+        </article>
+        <article class="klf-card">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f3d8e2'/%3E%3Ccircle cx='380' cy='80' r='72' fill='%23ffb85c' opacity='0.85'/%3E%3Crect x='40' y='150' width='180' height='180' rx='90' fill='%237d5ba6' opacity='0.5'/%3E%3Cpath d='M200 130l50 24v30l-50 24z' fill='%23e63462'/%3E%3C/svg%3E" width="480" height="270" alt="精品内容封面：浅粉背景中的半圆形与杏色光斑构成人像构图">
+          <div class="klf-card-body">
+            <div class="klf-tagrow"><span class="klf-tag klf-t2">深度测评</span></div>
+            <h3>六支常用人像镜头横向实战</h3>
+            <p>同一场景、同一模特、同一光线，只在焦段上做变量，结果比参数更有说服力。</p>
+            <div class="klf-meta"><span>作者 · 白鹿</span><span>播放 33.7 万</span><span>点赞 2.2 万</span></div>
+            <div class="klf-actions"><button class="klf-act klf-like" type="button" data-count="22000">♡ 点赞</button><button class="klf-act klf-save" type="button">☆ 收藏</button></div>
+          </div>
+        </article>
+        <article class="klf-card">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%237d5ba6'/%3E%3Crect x='0' y='190' width='480' height='80' fill='%232a1020' opacity='0.55'/%3E%3Ccircle cx='162' cy='120' r='46' fill='%23ffd9df'/%3E%3Ccircle cx='330' cy='120' r='46' fill='%23ffb85c'/%3E%3Cpath d='M246 96l44 22v30l-44 22z' fill='%23ffffff' opacity='0.9'/%3E%3C/svg%3E" width="480" height="270" alt="精品内容封面：紫色背景中双圆形构图与播放三角标识">
+          <div class="klf-card-body">
+            <div class="klf-tagrow"><span class="klf-tag klf-t3">人物访谈</span></div>
+            <h3>创作者的二十四小时：镜头之外的样子</h3>
+            <p>不聊方法论，只跟拍一天。看见认真拍片的人如何生活、如何为审美付账。</p>
+            <div class="klf-meta"><span>作者 · 陆星野</span><span>播放 27.5 万</span><span>点赞 1.6 万</span></div>
+            <div class="klf-actions"><button class="klf-act klf-like" type="button" data-count="16000">♡ 点赞</button><button class="klf-act klf-save" type="button">☆ 收藏</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="klf-sec klf-wrap" id="klf-topics" aria-label="专题企划">
+    <div class="klf-sec-head">
+      <h2><small>PROJECTS / 专题企划</small>推特高颜值福利 · 长期专题</h2>
+      <p class="klf-sec-desc">专题由官方发起、创作者共建，呈现高颜值内容背后的行业观察与品牌故事。持续更新中，欢迎报名参与。</p>
+    </div>
+    <div class="klf-topics">
+      <article class="klf-topic">
+        <span class="klf-status">更新中 · 已上线 24 期</span>
+        <h3>城市的面孔</h3>
+        <p>以一座城为样本，用影像记录在地文化与普通人的体面日常，每期一个城区。</p>
+        <ul>
+          <li>第 24 期：老菜市场的清晨六点</li>
+          <li>第 23 期：地铁末班车上的十二种表情</li>
+          <li>第 22 期：拆掉之前，再看一眼老电影院</li>
+        </ul>
+      </article>
+      <article class="klf-topic">
+        <span class="klf-status">招募中 · 报名 11 月 30 日截止</span>
+        <h3>高颜值影像计划 2026 冬季赛</h3>
+        <p>面向全社区征集原创短片，主题不限，鼓励真实表达。入选作品将在官网首页展示并获创作基金。</p>
+        <ul>
+          <li>赛道一：三分钟以内的城市短片</li>
+          <li>赛道二：人像与光影的实验影像</li>
+          <li>赛道三：素人访谈与生活记录</li>
+        </ul>
+      </article>
+      <article class="klf-topic">
+        <span class="klf-status">连载 · 每周日更新</span>
+        <h3>镜头之后的人</h3>
+        <p>聚焦创作者本身，聊设备之外的审美来源、职业选择与真实焦虑。</p>
+        <ul>
+          <li>特辑：妆造师的手与审美判断</li>
+          <li>特辑：剪辑师如何决定一支片子的呼吸</li>
+          <li>特辑：从社恐到面对镜头的三年</li>
+        </ul>
+      </article>
+      <article class="klf-topic">
+        <span class="klf-status">已完成 · 可整季回看</span>
+        <h3>出租屋里的四季</h3>
+        <p>一个小空间、一台相机、四支短片，讲述独居生活的秩序感与温柔。</p>
+        <ul>
+          <li>春：窗台上的第一株绿植</li>
+          <li>夏：风扇声与午睡的光</li>
+          <li>秋：把旧衣服改成新的样子</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- S5 作者双列简介 -->
+  <section class="klf-sec klf-band" id="klf-authors" aria-label="创作者">
+    <div class="klf-wrap">
+      <div class="klf-sec-head">
+        <h2><small>CREATORS / 创作者</small>推特高颜值福利 · 创作者矩阵</h2>
+        <p class="klf-sec-desc">平台签约与入驻创作者共 286 位。以下为入驻时间较长、社区口碑稳定的六位代表创作者。</p>
+      </div>
+      <div class="klf-authors">
+        <article class="klf-author">
+          <span class="klf-ava" style="background:linear-gradient(135deg,#e63462,#b5244a)">沈</span>
+          <div>
+            <h3>沈屿</h3>
+            <div class="klf-role">城市探索 · 影像记录</div>
+            <p>旧城区长大，习惯在清晨出门。擅长用长镜头呈现普通人的体面日常，作品节奏慢但不松散，被社区称为「安静的观察者」。坚持原生光线与现场收音。</p>
+            <div class="klf-nums"><span>作品 58</span><span>粉丝 42.6 万</span></div>
+          </div>
+        </article>
+        <article class="klf-author">
+          <span class="klf-ava" style="background:linear-gradient(135deg,#7d5ba6,#4a2e72)">鹿</span>
+          <div>
+            <h3>白鹿</h3>
+            <div class="klf-role">深度测评 · 摄影器材</div>
+            <p>商业摄影师出身，做测评只信现场对比。每期视频都会公开拍摄参数与素材片段，希望新人少踩坑。对器材不过度吹捧，被观众信任的原因正是这种克制。</p>
+            <div class="klf-nums"><span>作品 96</span><span>粉丝 61.2 万</span></div>
+          </div>
+        </article>
+        <article class="klf-author">
+          <span class="klf-ava" style="background:linear-gradient(135deg,#ffb85c,#c97b18)">陆</span>
+          <div>
+            <h3>陆星野</h3>
+            <div class="klf-role">人物访谈 · 品牌故事</div>
+            <p>做过五年杂志记者，转做影像访谈。习惯在提问前先沉默一会儿，让受访者自己找到想说的句子。访谈不设标准答案，只保留真实对话里的停顿与呼吸。</p>
+            <div class="klf-nums"><span>作品 41</span><span>粉丝 38.4 万</span></div>
+          </div>
+        </article>
+        <article class="klf-author">
+          <span class="klf-ava" style="background:linear-gradient(135deg,#3f7f8a,#245260)">韩</span>
+          <div>
+            <h3>韩小雨</h3>
+            <div class="klf-role">教程干货 · 剪辑教学</div>
+            <p>从手机剪辑起家，擅长把复杂技术拆成可执行的小练习。课程结构清晰，每节课都有作业，被新手视为耐心但严格的老师，社区里流传她的练习清单。</p>
+            <div class="klf-nums"><span>作品 132</span><span>粉丝 74.8 万</span></div>
+          </div>
+        </article>
+        <article class="klf-author">
+          <span class="klf-ava" style="background:linear-gradient(135deg,#e86f8f,#a83b5c)">苏</span>
+          <div>
+            <h3>苏晚</h3>
+            <div class="klf-role">艺术美学 · 妆造设计</div>
+            <p>舞台妆造师，做过剧场上百场演出。视频里更愿意讲「为什么这样处理」，而非只展示结果。对审美有明确立场，也乐于被人反驳，评论区交流气氛很好。</p>
+            <div class="klf-nums"><span>作品 67</span><span>粉丝 33.5 万</span></div>
+          </div>
+        </article>
+        <article class="klf-author">
+          <span class="klf-ava" style="background:linear-gradient(135deg,#5b6fb0,#33406f)">程</span>
+          <div>
+            <h3>程一</h3>
+            <div class="klf-role">日常记录 · 音频现场</div>
+            <p>录音师，喜欢把城市的声音当作主角。作品常只有固定机位和环境声，却意外耐看。他说高颜值不只是画面，声音也有质感，这份执念吸引了一批安静观众。</p>
+            <div class="klf-nums"><span>作品 49</span><span>粉丝 26.9 万</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 图文索引 -->
+  <section class="klf-sec klf-wrap" aria-label="图文索引">
+    <div class="klf-sec-head">
+      <h2><small>INDEX / 图文索引</small>推特高颜值福利 · 内容索引</h2>
+      <p class="klf-sec-desc">为方便检索，官网同步上线图文索引。每篇索引附关键片段与观看入口，适合快速判断是否需要完整观看。</p>
+    </div>
+    <div class="klf-focus-grid">
+      <figure class="klf-figure" style="margin:0">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 350'%3E%3Crect width='800' height='350' fill='%23eef3f7'/%3E%3Crect x='60' y='60' width='300' height='230' rx='16' fill='%23c9b6e4'/%3E%3Crect x='400' y='60' width='150' height='230' rx='16' fill='%23e63462' opacity='0.75'/%3E%3Crect x='580' y='60' width='160' height='100' rx='16' fill='%23ffb85c' opacity='0.85'/%3E%3Crect x='580' y='190' width='160' height='100' rx='16' fill='%232a1020' opacity='0.7'/%3E%3C/svg%3E" width="800" height="350" alt="图文索引配图：浅冷色背景上四块不同颜色区块代表内容分类">
+        <figcaption>图文索引采用分类区块呈现，方便快速定位视频类型。</figcaption>
+      </figure>
+      <div class="klf-vlist">
+        <div class="klf-vitem">
+          <h4>01 · 一支短片从想法到上线要经过几步</h4>
+          <p>拆解提报、脚本、拍摄、剪辑、审片五个环节，附每阶段常见卡点与解法。</p>
+          <div class="klf-meta"><span>图文索引 · 约 6 分钟阅读</span></div>
+        </div>
+        <div class="klf-vitem">
+          <h4>02 · 素人接受镜头访谈前需要准备什么</h4>
+          <p>服装、语速、话题边界与心理预期，四条建议来自 40 位受访者的经验汇总。</p>
+          <div class="klf-meta"><span>图文索引 · 约 5 分钟阅读</span></div>
+        </div>
+        <div class="klf-vitem">
+          <h4>03 · 低预算如何做出有质感的光影</h4>
+          <p>不买设备，用窗帘、白纸和一面墙重构光线，附现场示意图与成片对比。</p>
+          <div class="klf-meta"><span>图文索引 · 约 7 分钟阅读</span></div>
+        </div>
+        <div class="klf-vitem">
+          <h4>04 · 关于「高颜值」的三个常见误解</h4>
+          <p>从审美标准到内容价值，编辑部整理的常见争论与回应，值得先看再讨论。</p>
+          <div class="klf-meta"><span>图文索引 · 约 8 分钟阅读</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 长篇品牌解析 -->
+  <section class="klf-sec klf-wrap" id="klf-essay" aria-label="品牌解析">
+    <article class="klf-essay">
+      <h2>品牌解析：为什么「推特高颜值福利」坚持做认真拍片的视频官网</h2>
+      <p>在短视频内容高度同质化的当下，「推特高颜值福利」选择了一条更慢的路：以一个企业级视频品牌官网的形态，把审美、真实与陪伴放在流量之前。以下从品牌定位、内容标准与社区运营三个层面展开，说明我们对高颜值内容的完整理解。</p>
+
+      <h3>一、品牌定位：高颜值不是滤镜，而是可信赖的审美判断</h3>
+      <p>很多人第一次听到这个品牌名，会以为它只做视觉刺激的短片。事实上，推特高颜值福利官方网站从立项起就把「高颜值」定义为一种<strong>可信赖的审美判断</strong>：画面干净、光线诚实、人物有尊严、故事有落点。我们不回避好看这件事，但拒绝把好看简化为滤镜叠加与夸张造型。这也是平台在行业观察中被反复提到的一点——真正能留下来的内容，往往不是最刺激的那一支，而是最耐看的那一支。</p>
+      <p>为了守住这个标准，编辑部建立了三层内容评估：第一层看原创性与版权来源，所有上传内容均需通过正版授权核验；第二层看影像完整度，包括构图、色彩、声音与剪辑节奏；第三层看表达价值，是否提供了新的观察角度。三层都通过，才会进入官网精品内容库。这套机制让平台在创作者之间形成了明确预期：想被推荐，就必须认真拍片。</p>
+      <div class="klf-quote">我们相信，高颜值内容的核心竞争力不是偶然的一支爆款，而是持续运营中形成的稳定审美口碑。</div>
+
+      <h3>二、内容标准：从教程干货到人物访谈，构成完整的内容生态</h3>
+      <p>平台的内容结构并不依赖单一题材。教程干货负责降低入门门槛，深度测评帮助创作者少走弯路，人物访谈与品牌故事提供行业观察的纵深，日常记录与城市探索则让社区保持温度。以韩小雨的剪辑课程为例，她把十四天拆成可执行的练习，每节课后都有明确作业，很多新人在完成练习后上传了自己的第一支短片；而白鹿的器材测评坚持同场景对比，公开参数与素材，让讨论回到事实本身。</p>
+      <p>在人物访谈方向，陆星野的做法是减少提问、增加等待。他不追求金句，而是保留受访者的犹豫与停顿。这类内容在传播上并不占优势，却构成了平台口碑的底座：观众愿意相信这里的内容不是被设计出来煽动情绪的。与此同时，苏晚的妆造内容与程一的环境声音记录，分别从视觉与听觉两个维度扩展了「好看」的边界，让内容生态更加多元、包容。</p>
+      <figure class="klf-figure">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 400'%3E%3Crect width='900' height='400' fill='%23fff3e6'/%3E%3Ccircle cx='180' cy='200' r='110' fill='%23e63462' opacity='0.28'/%3E%3Ccircle cx='330' cy='200' r='110' fill='%237d5ba6' opacity='0.28'/%3E%3Ccircle cx='480' cy='200' r='110' fill='%23ffb85c' opacity='0.5'/%3E%3Crect x='600' y='100' width='240' height='24' rx='12' fill='%23e63462' opacity='0.55'/%3E%3Crect x='600' y='144' width='180' height='24' rx='12' fill='%237d5ba6' opacity='0.55'/%3E%3Crect x='600' y='188' width='210' height='24' rx='12' fill='%23ffb85c' opacity='0.75'/%3E%3Crect x='600' y='232' width='150' height='24' rx='12' fill='%232a1020' opacity='0.4'/%3E%3C/svg%3E" width="900" height="400" alt="品牌解析配图：三重圆形叠加与条状色块象征内容生态的多元构成">
+        <figcaption>多元题材共同构成平台内容生态，任何单一方向都不足以代表品牌全貌。</figcaption>
+      </figure>
+      <p>在内容分发上，官网采用焦点推荐、精品内容库、专题企划与图文索引并行的方式。焦点推荐由编辑部与社区投票共同决定，避免纯算法导致的审美窄化；精品内容库按题材与更新批次组织，方便回看；专题企划则以长期项目的形式沉淀内容，比如「城市的面孔」系列已经更新二十四期，覆盖多个城区的在地文化。图文索引则为快速检索服务，让用户不必完整播放也能判断内容是否值得投入时间。</p>
+
+      <h3>三、社区运营：让创作者被看见，也让观众被尊重</h3>
+      <p>一个视频品牌官网能否长期运行，取决于它是否真正把创作者与观众当作共同体。平台为入驻创作者提供三方面支持：一是官方发布通道，作品可同步进入专题与榜单；二是创作基金与比赛机制，每季度开放报名与投票，入选作品获得制作支持；三是数据反馈，创作者可以看到完播率、收藏率与评论关键词的分布，用更具体的方式理解观众。这些机制并不神秘，关键在于持续运营，而不是一次性的活动。</p>
+      <p>对观众侧，平台坚持用户至上的原则：首页不堆砌标题党，评论区保留不同意见，举报与反馈通道保持可预期处理时效。我们也在尝试让社区更有温度——每月一次的「创作者开放日」会邀请不同领域的作者直播答疑，任何人都可以提问。去年冬季赛报名期间，社区自发整理了一份新人拍摄攻略，后来被编辑部收录进帮助中心，这大概是平台最想看到的样子：内容生态不是平台单方面搭建的，而是在陪伴中生长出来的。</p>
+      <p>回到最初的问题：为什么坚持做认真拍片的视频官网？因为高颜值内容的价值不在于瞬间的点击，而在于它能否让人愿意反复观看、愿意学习模仿、愿意在评论区认真讨论。当一个品牌能够稳定提供这种体验，它就不只是内容渠道，而是一种审美基础设施。推特高颜值福利会继续沿着这条路走，把镜头对准真实的人与光。</p>
+    </article>
+  </section>
+
+  <!-- S6 数据榜单 + 评论 -->
+  <section class="klf-sec klf-band" id="klf-rank" aria-label="数据榜单与评价">
+    <div class="klf-wrap">
+      <div class="klf-sec-head">
+        <h2><small>DATA / 口碑数据</small>推特高颜值福利 · 榜单与社区评价</h2>
+        <p class="klf-sec-desc">数据由平台统计系统按周更新，用于呈现内容趋势与社区口碑，不作为唯一推荐依据。</p>
+      </div>
+      <div class="klf-rank">
+        <div class="klf-rankbox">
+          <h3><span>热度</span>本周播放榜</h3>
+          <ol>
+            <li>午后三点的城市面孔 <b>68.4万</b></li>
+            <li>手机也能拍出高级感 <b>51.3万</b></li>
+            <li>十四天学会剪短片 <b>44.2万</b></li>
+            <li>打光的十种脾气 <b>42.1万</b></li>
+            <li>六支人像镜头横评 <b>33.7万</b></li>
+          </ol>
+        </div>
+        <div class="klf-rankbox">
+          <h3><span>新人</span>新锐创作者榜</h3>
+          <ol>
+            <li>程一 · 环境声音 <b>+128%</b></li>
+            <li>苏晚 · 妆造设计 <b>+96%</b></li>
+            <li>林间 · 自然影像 <b>+74%</b></li>
+            <li>陈默 · 素人访谈 <b>+61%</b></li>
+            <li>阿岚 · 家居记录 <b>+45%</b></li>
+          </ol>
+        </div>
+        <div class="klf-rankbox">
+          <h3><span>口碑</span>社区收藏榜</h3>
+          <ol>
+            <li>一个人住第七年 <b>1.9万</b></li>
+            <li>十四天学会剪短片 <b>1.6万</b></li>
+            <li>城市的面孔合集 <b>1.4万</b></li>
+            <li>创作者的二十四小时 <b>1.1万</b></li>
+            <li>出租屋里的四季 <b>0.9万</b></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="klf-sec-head" style="margin-top:38px">
+        <h3 style="font-size:20px">社区评价 · 他们这样说</h3>
+        <p class="klf-sec-desc">来自不同视角的真实反馈，包含肯定与建议。</p>
+      </div>
+      <div class="klf-comments">
+        <div class="klf-cmt">
+          <div class="klf-cmt-head"><span class="klf-ava" style="background:linear-gradient(135deg,#e63462,#7d5ba6)">阿</span><b>阿岚</b><span>· 2 天前</span></div>
+          <div class="klf-cmt-rating">★★★★★</div>
+          <p>第一次在官网完整看完一个专题，从选题到拍摄都很稳，没有那种为了流量硬凹的感觉，这点很难得。</p>
+        </div>
+        <div class="klf-cmt">
+          <div class="klf-cmt-head"><span class="klf-ava" style="background:linear-gradient(135deg,#ffb85c,#e63462)">小</span><b>小满</b><span>· 3 天前</span></div>
+          <p>剪辑课真的很实用，跟着练到第六天就剪出了自己能看的小片子。希望以后能有进阶课。</p>
+        </div>
+        <div class="klf-cmt">
+          <div class="klf-cmt-head"><span class="klf-ava" style="background:linear-gradient(135deg,#3f7f8a,#7d5ba6)">木</span><b>木子</b><span>· 5 天前</span></div>
+          <div class="klf-cmt-rating">★★★★☆</div>
+          <p>内容质量整体不错，就是搜索有时找不到很早的作品，如果能加个按年份筛选会更好。</p>
+        </div>
+        <div class="klf-cmt">
+          <div class="klf-cmt-head"><span class="klf-ava" style="background:linear-gradient(135deg,#5b6fb0,#e63462)">林</span><b>林间</b><span>· 6 天前</span></div>
+          <p>作为创作者说一句，平台的数据后台挺清楚，能看到完播率和收藏率，比单看播放量有用多了。</p>
+        </div>
+        <div class="klf-cmt">
+          <div class="klf-cmt-head"><span class="klf-ava" style="background:linear-gradient(135deg,#c97b18,#7d5ba6)">一</span><b>一只橘子</b><span>· 1 周前</span></div>
+          <p>城市的面孔系列我是从头追到尾的，每次看完都想出门走走，这种内容的力量不是数据能体现的。</p>
+        </div>
+        <div class="klf-cmt">
+          <div class="klf-cmt-head"><span class="klf-ava" style="background:linear-gradient(135deg,#a83b5c,#ffb85c)">周</span><b>周末不加班</b><span>· 1 周前</span></div>
+          <div class="klf-cmt-rating">★★★★★</div>
+          <p>难得看到一个把「好看」讲得这么克制的平台，不吹不捧，反而更愿意相信它的推荐。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 企业动态 + 合作 + FAQ -->
+  <section class="klf-sec klf-wrap" aria-label="企业动态">
+    <div class="klf-sec-head">
+      <h2><small>NEWS / 企业动态</small>官方发布与内容更新</h2>
+      <p class="klf-sec-desc">关于平台建设、创作者扶持与内容运营的公开信息，均以本页发布为准。</p>
+    </div>
+    <div class="klf-news">
+      <article class="klf-newsitem">
+        <time>2026-11-20</time>
+        <h3>冬季赛报名通道开启</h3>
+        <p>「高颜值影像计划 2026 冬季赛」开放报名，三个赛道共设 30 个入选名额，入选作品将在官网首页展示。</p>
+      </article>
+      <article class="klf-newsitem">
+        <time>2026-11-14</time>
+        <h3>创作者扶持基金第三批公示</h3>
+        <p>12 位新锐创作者入选，覆盖城市记录、环境声音与妆造设计方向，公示期为七个工作日。</p>
+      </article>
+      <article class="klf-newsitem">
+        <time>2026-11-06</time>
+        <h3>官网内容库升级完成</h3>
+        <p>精品内容库支持按题材筛选与收藏同步，历史专题全部补齐高清版本，播放体验进一步优化。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="klf-sec klf-band" aria-label="合作与帮助">
+    <div class="klf-wrap">
+      <div class="klf-sec-head">
+        <h2><small>PARTNERS / 合作品牌</small>共同维护内容品质</h2>
+        <p class="klf-sec-desc">平台与多家影像机构、场地与品牌保持长期合作，为创作者提供拍摄资源与专业支持。</p>
+      </div>
+      <div class="klf-partners">
+        <div class="klf-partner">光屿影像<span>器材与场地支持</span></div>
+        <div class="klf-partner">城南剧场<span>演出拍摄合作</span></div>
+        <div class="klf-partner">青禾文化<span>专题联合出品</span></div>
+        <div class="klf-partner">拾光工作室<span>后期与调色支持</span></div>
+      </div>
+
+      <div class="klf-sec-head" style="margin-top:40px" id="klf-faq">
+        <h2><small>FAQ / 帮助中心</small>常见问题</h2>
+        <p class="klf-sec-desc">关于观看、投稿与版权的高频问题，点击标题展开查看。</p>
+      </div>
+      <div class="klf-faq">
+        <details>
+          <summary>网站内容是否需要付费观看？</summary>
+          <p>绝大多数原创短片可免费高清观看。部分专题合集与会员专享内容需要登录并开通会员，具体以页面标注为准。</p>
+        </details>
+        <details>
+          <summary>如何向平台投稿？</summary>
+          <p>点击页面中的「我要投稿」按钮填写基本信息，编辑会在三个工作日内回复。首次投稿建议附上作品链接与创作说明。</p>
+        </details>
+        <details>
+          <summary>投稿作品需要满足什么要求？</summary>
+          <p>需为原创或已获正版授权，画面与声音清晰，无第三方侵权素材。涉及他人肖像的内容需提供书面许可。</p>
+        </details>
+        <details>
+          <summary>为什么我的作品没有进入精品内容库？</summary>
+          <p>常见原因包括画质未达标准、声音处理粗糙、版权材料不全或题材与近期策划重复。编辑会在反馈中说明具体原因。</p>
+        </details>
+        <details>
+          <summary>创作者扶持基金如何申请？</summary>
+          <p>每季度开放一次申请，需提交过往作品与本期企划书。评审由编辑部与外部影像从业者共同完成，结果公开公示。</p>
+        </details>
+        <details>
+          <summary>发现侵权或不当内容怎么办？</summary>
+          <p>可通过每篇内容下方的举报入口反馈，平台承诺在五个工作日内完成核查并回复处理结果。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 CTA 投稿 -->
+  <section class="klf-sec klf-wrap" aria-label="投稿入口">
+    <div class="klf-cta">
+      <div>
+        <h2>把你的高颜值影像，交给更多懂的人看</h2>
+        <p>推特高颜值福利官网长期开放投稿与专题共建，无论你是刚拿起相机的新人，还是已有作品的创作者，都可以在这里找到同行者。</p>
+      </div>
+      <button class="klf-btn klf-btn-primary" type="button" id="klfSubmitOpen2">立即投稿</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="klf-footer">
+  <div class="klf-wrap">
+    <div class="klf-footer-grid">
+      <div>
+        <h3>推特高颜值福利</h3>
+        <p style="color:#c3a9bb;max-width:30em">推特高颜值福利官方网站，专注高颜值原创视频内容运营，为创作者与企业提供稳定的内容生态与传播阵地。</p>
+      </div>
+      <div>
+        <h3>内容</h3>
+        <ul>
+          <li><a href="#klf-focus">焦点推荐</a></li>
+          <li><a href="#klf-videos">精品内容库</a></li>
+          <li><a href="#klf-topics">专题企划</a></li>
+          <li><a href="#klf-rank">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>关于</h3>
+        <ul>
+          <li><a href="#klf-essay">品牌解析</a></li>
+          <li><a href="#klf-authors">创作者矩阵</a></li>
+          <li><a href="#klf-faq">帮助中心</a></li>
+          <li><a href="#klf-top">回到页首</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>联系我们</h3>
+        <ul>
+          <li>合作邮箱：hello@tuite-gaoyanzhi.example</li>
+          <li>投稿咨询：工作日 10:00 – 18:00</li>
+          <li>版权与举报：通过内容页反馈入口提交</li>
+        </ul>
+      </div>
+    </div>
+    <div class="klf-footer-bottom">
+      <span>© 2026 推特高颜值福利 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：示例备案 2026000000 号 · 内容均为原创或正版授权</span>
+    </div>
+  </div>
+</footer>
+
+<button class="klf-top" id="klfTopBtn" aria-label="回到顶部">↑</button>
+<div class="klf-toast" id="klfToast" role="status" aria-live="polite"></div>
+
+<div class="klf-modal" id="klfModal" role="dialog" aria-modal="true" aria-labelledby="klfModalTitle">
+  <div class="klf-modal-box">
+    <button class="klf-modal-close" id="klfModalClose" aria-label="关闭">×</button>
+    <h3 id="klfModalTitle">投稿入口</h3>
+    <div id="klfModalBody">
+      <p>请准备作品链接、创作说明与版权材料。编辑会在三个工作日内通过邮件回复，首次投稿建议附上一支完整作品。</p>
+    </div>
+    <div class="klf-modal-actions">
+      <a class="klf-btn klf-btn-primary" href="#klf-faq" id="klfModalGo">查看投稿要求</a>
+      <button class="klf-btn klf-btn-ghost" type="button" id="klfModalCancel">稍后再说</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // 移动端导航折叠
+  var burger = document.getElementById("klfBurger");
+  var mobileNav = document.getElementById("klfMobileNav");
+  if (burger && mobileNav) {
+    burger.addEventListener("click", function(){
+      var on = mobileNav.classList.toggle("klf-on");
+      burger.setAttribute("aria-expanded", on ? "true" : "false");
+    });
+    mobileNav.addEventListener("click", function(e){
+      if (e.target.tagName === "A") {
+        mobileNav.classList.remove("klf-on");
+        burger.setAttribute("aria-expanded","false");
+      }
+    });
+  }
+
+  // Toast
+  var toast = document.getElementById("klfToast");
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add("klf-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("klf-on"); }, 2200);
+  }
+
+  // 搜索反馈
+  var searchInput = document.getElementById("klfSearchInput");
+  var searchTip = document.getElementById("klfSearchTip");
+  var searchBtn = document.getElementById("klfSearchBtn");
+  var indexData = [
+    {k:"城市面孔", t:"专题 · 城市的面孔（已上线24期）"},
+    {k:"剪辑", t:"课程 · 十四天学会剪一支高颜值短片"},
+    {k:"镜头", t:"测评 · 六支常用人像镜头横向实战"},
+    {k:"访谈", t:"栏目 · 镜头之后的人（每周日更新）"},
+    {k:"沈屿", t:"创作者 · 沈屿 城市探索影像"},
+    {k:"白鹿", t:"创作者 · 白鹿 摄影器材测评"},
+    {k:"韩小雨", t:"创作者 · 韩小雨 剪辑教学"},
+    {k:"冬季赛", t:"活动 · 高颜值影像计划 2026 冬季赛"}
+  ];
+  function runSearch(){
+    var q = (searchInput.value || "").trim();
+    if (!q) {
+      searchTip.classList.remove("klf-on");
+      return;
+    }
+    var hits = indexData.filter(function(item){
+      return item.k.indexOf(q) > -1 || item.t.indexOf(q) > -1;
+    });
+    if (!hits.length) {
+      searchTip.innerHTML = "未找到与「" + q.replace(/</g,"&lt;") + "」直接匹配的条目，试试「剪辑」「城市面孔」或创作者昵称。";
+    } else {
+      searchTip.innerHTML = "为你找到 " + hits.length + " 条相关内容：" + hits.slice(0,4).map(function(h){ return "<br>· " + h.t; }).join("");
+    }
+    searchTip.classList.add("klf-on");
+  }
+  if (searchInput && searchBtn && searchTip) {
+    searchBtn.addEventListener("click", runSearch);
+    searchInput.addEventListener("input", runSearch);
+    searchInput.addEventListener("keydown", function(e){
+      if (e.key === "Enter") { e.preventDefault(); runSearch(); }
+    });
+    document.addEventListener("click", function(e){
+      if (!e.target.closest(".klf-search")) searchTip.classList.remove("klf-on");
+    });
+  }
+
+  // 点赞 / 收藏
+  function fmt(n){
+    if (n >= 10000) return (n/10000).toFixed(1).replace(/\.0$/,"") + "万";
+    return String(n);
+  }
+  document.querySelectorAll(".klf-like").forEach(function(btn){
+    var base = parseInt(btn.getAttribute("data-count") || "0", 10);
+    var on = false;
+    btn.addEventListener("click", function(){
+      on = !on;
+      var n = on ? base + 1 : base;
+      btn.classList.toggle("klf-liked", on);
+      btn.textContent = (on ? "♥ 已赞 " : "♡ 点赞 ") + fmt(n);
+      showToast(on ? "已点赞，感谢支持" : "已取消点赞");
+    });
+  });
+  document.querySelectorAll(".klf-save").forEach(function(btn){
+    var on = false;
+    btn.addEventListener("click", function(){
+      on = !on;
+      btn.classList.toggle("klf-saved", on);
+      btn.textContent = on ? "★ 已收藏" : "☆ 收藏";
+      showToast(on ? "已加入收藏夹" : "已取消收藏");
+    });
+  });
+
+  // 复制链接
+  document.querySelectorAll(".klf-copy").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var url = window.location.href.split("#")[0] + "#klf-focus";
+      function done(){ showToast("链接已复制，可以分享给朋友了"); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done, function(){ fallback(); });
+      } else {
+        fallback();
+      }
+      function fallback(){
+        var ta = document.createElement("textarea");
+        ta.value = url;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand("copy"); done(); }
+        catch(err){ showToast("复制失败，请手动复制地址栏链接"); }
+        document.body.removeChild(ta);
+      }
+    });
+  });
+
+  // 评论弹窗
+  document.querySelectorAll(".klf-open-cmt").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      openModal("社区评论",
+        "<p>这篇内容共有 1,286 条评论。编辑部精选：</p><p>「不修饰、不回避，把普通人的体面拍出来了。」</p><p>「看完想去走走，也想拿起相机。」</p><p>你可以在下方帮助中心了解评论规范，我们保留不同意见，也拒绝人身攻击。</p>"
+      );
+    });
+  });
+
+  // 弹窗通用
+  var modal = document.getElementById("klfModal");
+  var modalTitle = document.getElementById("klfModalTitle");
+  var modalBody = document.getElementById("klfModalBody");
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add("klf-on");
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    modal.classList.remove("klf-on");
+    document.body.style.overflow = "";
+  }
+  document.getElementById("klfModalClose").addEventListener("click", closeModal);
+  document.getElementById("klfModalCancel").addEventListener("click", closeModal);
+  document.getElementById("klfModalGo").addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){ if (e.target === modal) closeModal(); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeModal(); });
+
+  // 投稿入口
+  ["klfSubmitOpen","klfSubmitOpen2"].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) {
+      el.addEventListener("click", function(){
+        openModal("投稿入口",
+          "<p>请准备作品链接、创作说明与版权材料。编辑会在三个工作日内通过邮件回复。</p><p>投稿要求：原创或正版授权、画面与声音清晰、涉及他人肖像需提供书面许可。</p><p>冬季赛报名截止 11 月 30 日，入选作品将在官方网站首页展示。</p>"
+        );
+      });
+    }
+  });
+
+  // 回到顶部
+  var topBtn = document.getElementById("klfTopBtn");
+  window.addEventListener("scroll", function(){
+    if (window.scrollY > 520) topBtn.classList.add("klf-on");
+    else topBtn.classList.remove("klf-on");
+  }, {passive:true});
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+})();
+</script>
+</body>
+                                               </html>
